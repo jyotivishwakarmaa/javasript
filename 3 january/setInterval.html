@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      let myInt;
+      function mydata() {
+        document.getElementById("demo").innerHTML += "Cybrom";
+      }
+
+      function mystart() {
+        myInt = setInterval(mydata, 1000);
+      }
+
+      function mystop() {
+        clearInterval(myInt);
+      }
+    </script>
+  </head>
+
+  <body>
+    <p id="demo">Cybrom!</p>
+    <button onclick="mystart()">Start</button>
+    <button onclick="mystop()">Stop</button>
+    <!-- <script>
+      function mydata() {
+        document.getElementById("demo").innerHTML += "Happy new year";
+      }
+      setInterval(mydata, 1000);
+    </script> -->
+  </body>
+</html>

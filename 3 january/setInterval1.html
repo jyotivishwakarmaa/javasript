@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      let
+      function mycount(){
+          let myNum = Number(document.getElementById("demo").innerHTML);
+          myNum++;
+          document.getElementById("demo").innerHTML = myNum;
+      }
+      function mystart(){
+          myInt= setInterval(mycount, 1000);
+      }
+      function mystop(){
+          clearInterval(myInt);
+      }
+      function myclear(){
+          clearInterval(myInt);
+          document.getElementById("demo").innerHTML = 0;
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="mystart()">Start</button>
+    <button onclick="mystop()">Stop</button>
+    <button onclick="myclear()">Clear</button>
+
+    <h1 id="demo">0</h1>
+  </body>
+</html>
