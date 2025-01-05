@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <h1 id="demo">Welcome!   </h1>
+    <button onclick="display()">Click here</button>
+    <button onclick="mystop()">Stop</button>
+
+    <script>
+        function myfun(){
+            document.getElementById("demo").innerHTML+= "Happy new year 2025";
+        }
+    function display(){
+       myint= setTimeout(myfun, 5000);
+    }
+
+    function mystop(){
+        clearTimeout(myint);
+    }
+
+    
+
+    </script>
+
+</body>
+</html>

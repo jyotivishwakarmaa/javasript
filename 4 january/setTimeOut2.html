@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #line{
+            width: 10px;
+            height: 10px;
+            background-color: red;
+        }
+    </style>
+
+    <script>
+        let wdt=10;
+        function myLine(){
+            let obj= document.getElementById("line");
+            wdt=wdt+1;
+                obj.style.width=wdt+"px";
+                setTimeout(myLine, 10);
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="myLine()">Click here</button>
+    <br><br>
+    <div id="line"></div>
+</body>
+</html>
