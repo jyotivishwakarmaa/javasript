@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function datasave() {
+        let mynum = document.getElementById("nm").value;
+        localStorage.setItem("Stuname", mynum);
+      }
+    </script>
+  </head>
+  <body>
+    enter name : <input type="text" id="nm" />
+    <button onclick="datasave()">Click here</button>
+  </body>
+</html>
