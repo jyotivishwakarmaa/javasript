@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      async function show() {
+        let obj = await fetch("http://localhost:3000/Dogs");
+        // console.log(obj);
+
+        let mydata = await obj.json();
+        console.log(mydata);
+
+        let myTable = `<table>
+                    <tr>
+                        <th> Breed </th>
+                          <th> Muscular </th>
+                            <th> Aggresive </th>
+                              <th> Friendly </th>
+                    </tr>`;
+
+        mydata.map((e) => {
+          myTable += `<tr>
+                    
+                    <td>${e.breed}</td>
+                    <td>${e.muscular}</td>
+                    <td>${e.aggresive}</td>
+                    <td>${e.friendly}</td>
+                    </tr>`;
+        });
+        document.getElementById("demo").innerHTML = myTable;
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="show()">Show Table</button>
+    <hr />
+    <p id="demo"></p>
+
+  </body>
+</html>

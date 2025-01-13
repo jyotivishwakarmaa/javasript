@@ -15,7 +15,7 @@ body{
     background: linear-gradient(45deg,#0a0a0a, #3a4452);
 }
 .calculator{
-    border: 1px solid #717377;
+    border: 2px solid #717377;
     padding: 8px;
     border-radius: 16px;
     background-color: transparent;
@@ -23,7 +23,6 @@ body{
 }
 input{
     width: 300px;
-    border: none;
     padding: 24px;
     margin: 10px;
     background: transparent;

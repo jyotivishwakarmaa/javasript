@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      async function showData() {
+        let myobj = await fetch("http://localhost:3000/employee");
+        // console.log(myobj);
+        let myData = await myobj.json();
+        console.log(myData);
+
+        let Table = `<table>
+            
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Position</th>
+                        <th>Salary</th>
+                        </tr>`;
+
+        myData.map((key) => {
+          Table += `<tr>
+                            
+                                <td>${key.Name}</td>
+                                  <td>${key.Age}</td>
+                                    <td>${key.Position}</td>
+                                      <td>${key.Salary}</td>
+                            </tr>`;
+        });
+        Table += "</table>";
+
+        document.getElementById("demo").innerHTML=Table;
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="showData()">Show Data</button>
+    <hr />
+    <p id="demo"></p>
+  </body>
+</html>

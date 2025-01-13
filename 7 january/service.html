@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Services</a>
+    <hr />
+
+    <h3 id="demo">Data display</h3>
+    <button onclick="userlogout()">Logout</button>
+    <hr />
+    <h1>Our services</h1>
+    <hr />
+
+    <script>
+      let nm = document.getElementById("nm").value;
+      let email = document.getElementById("email").value;
+      document.getElementById("demo").innerHTML = "Welcome : " + nm + "Email : " + email;
+    </script>
+  </body>
 </html>

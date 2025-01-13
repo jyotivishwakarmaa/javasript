@@ -1,0 +1,57 @@
+{
+  "student": [
+    {
+      "name": "Jyoti",
+      "roll": "100",
+      "city": "Bhopal",
+      "fees": "10000",
+      "id": "f125"
+    },
+    {
+      "name": "Atika",
+      "email": "abc@123",
+      "roll": "101",
+      "sub": "JAVA",
+      "city": "Jabalpur",
+      "fees": "10000",
+      "Hobby": " free ka Khana",
+      "Fav. color": "Black",
+      "Gender": "Female",
+      "Height": "5ft",
+      "id": "de57"
+    },
+    {
+      "name": "Akshay",
+      "email": "abc@123",
+      "roll": "100",
+      "sub": "JAVA",
+      "city": "Bhopal",
+      "fees": "10000",
+      "Hobby": "Chatr-patr",
+      "Fav. color": "Black",
+      "Gender": "male",
+      "Height": "5.6ft",
+      "id": "e9db"
+    },
+    {
+      "name": "Priya",
+      "email": "abc@123",
+      "roll": "103",
+      "sub": "JAVA",
+      "city": "Bhopal",
+      "fees": "10000",
+      "Hobby": "Dance",
+      "Fav. color": "Black",
+      "Gender": "Female",
+      "Height": "5ft",
+      "id": "1131"
+    },
+    {
+      "id": "4d0e",
+      "rollno": "100",
+      "name": "jyoti",
+      "city": {},
+      "fees": {}
+    }
+  ]
+}

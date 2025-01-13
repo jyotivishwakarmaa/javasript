@@ -1,0 +1,31 @@
+{
+  "Dogs": [
+    {
+      "breed":"Rotweiler",
+      "muscular":"true",
+      "aggresive":"true",
+      "friendly":"false"
+    },
+
+    {
+      "breed": "German",
+      "muscular": "false",
+      "aggresive": "partially",
+      "friendly": "true"
+    },
+
+    {
+      "breed": "Labrador",
+      "muscular": "false",
+      "aggresive": "false",
+      "friendly": "true"
+    },
+
+    {
+      "breed": "Cane Carso",
+      "muscular": "true",
+      "aggresive": "true",
+      "friendly": "false"
+    }
+  ]
+}

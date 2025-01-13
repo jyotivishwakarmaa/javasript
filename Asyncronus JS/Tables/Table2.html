@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      async function display() {
+        let myob = await fetch("http://localhost:4000/cars");
+        // console.log(myob);
+
+        let Data = await myob.json();
+        console.log(Data);
+
+        let Table = `<table>
+                    <tr>
+                        
+                      <th>Company</th>  
+                      <th>Name</th>  
+                      <th>Lounch year</th>  
+                      <th>Price</th>  
+                        </tr>`;
+
+        Data.map((e) => {
+          Table += `<tr>
+                        
+                        <td>${e.company}</td>
+                          <td>${e.name}</td>
+                            <td>${e.lounch}</td>
+                              <td>${e.price}</td>
+                            </tr>`;
+        });
+        Table += "</table>";
+        document.getElementById("para").innerHTML = Table;
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="display()">Display</button>
+    <hr />
+    <p id="para"></p>
+  </body>
+</html>

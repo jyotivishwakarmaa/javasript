@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <script>
-        function valset(){
-            let name = document.getElementById("nm").value;
-            let email = document.getElementById("email").value;
+      function valset() {
+        let name = document.getElementById("nm").value;
+        let email = document.getElementById("email").value;
 
-            localStorage.setItem("empname", name);
-            localStorage.setItem("ename", email);
-            alert("you are login!!")
-        }
+        localStorage.setItem("empname", name);
+        localStorage.setItem("ename", email);
+        alert("you are login!!");
+      }
     </script>
-</head>
-<body>
-    
-     
+  </head>
+  <body>
     <a href="index.html">Home</a>
-       <a href="about.html">Home</a>
-          <a href="service.html">Home</a>
-          <hr />
+    <a href="about.html">About</a>
+    <a href="service.html">Services</a>
+    <hr />
 
-          <h1>Welcome</h1>
-          Enter name : <input type="text" id="nm">
-          <br>
-            Enter email : <input type="text" id="email">
-            <br>
-
-</body>
+    <h3 id="demo">Data display</h3>
+    <hr />
+    <h1>About page</h1>
+    <hr />
+    <script>
+      let nm = document.getElementById("nm").value;
+      let email = document.getElementById("email").value;
+      document.getElementById("demo").innerHTML =
+        "Welcome : " + nm + "Email : " + email;
+    </script>
+  </body>
 </html>

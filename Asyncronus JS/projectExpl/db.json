@@ -1,0 +1,44 @@
+{
+  "student": [
+    {
+      "rollno": "100",
+      "name": "jyoti",
+      "city": "Bhopal",
+      "fees": "50000"
+    },
+
+    {
+      "rollno": "101",
+      "name": "Kapil",
+      "city": "Indore",
+      "fees": "60000"
+    },
+
+    {
+      "rollno": "102",
+      "name": "Ajay",
+      "city": "Jabalpur",
+      "fees": "80000"
+    },
+
+    {
+      "rollno": "103",
+      "name": "Ritu",
+      "city": "Ujjain",
+      "fees": "10000"
+    },
+
+    {
+      "rollno": "104",
+      "name": "Tinu",
+      "city": "Delhi",
+      "fees": "90000"
+    },
+    {
+      "rollno": "105",
+      "name": "Saurabh",
+      "city": "Indore",
+      "fees": "40000"
+    }
+  ]
+}

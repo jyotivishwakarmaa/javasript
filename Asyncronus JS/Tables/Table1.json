@@ -1,0 +1,31 @@
+{
+  "employee": [
+    {
+      "Name": "Rahul",
+      "Age": "28",
+      "Position": "Director",
+      "Salary": "500000"
+    },
+
+    {
+      "Name": "Rohit",
+      "Age": "26",
+      "Position": "Sr. Manager",
+      "Salary": "900000"
+    },
+
+    {
+      "Name": "Sumit",
+      "Age": "26",
+      "Position": "Jr. Manager",
+      "Salary": "600000"
+    },
+
+    {
+      "Name": "Vicky",
+      "Age": "29",
+      "Position": "Excutive",
+      "Salary": "900000"
+    }
+  ]
+}
