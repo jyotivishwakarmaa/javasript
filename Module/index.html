@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1 id="demo">Welcome to Bhopal</h1>
+    <script type="module">
+
+        import {name, age, city} from "./Bhopal.js";
+        document.getElementById("demo").innerHTML = "Name : "+ name+"Age : "+age+"City : "+city;
+    </script> -->
+
+    <h1 id="demo">Welcome to bhopal</h1>
+    <h2 id="demo1">Welcome to bhopal</h2>
+    <script type="module">
+      import college from "./Bhopal.js";
+
+      import { name, age } from "./Bhopal.js";
+
+      document.getElementById("demo").innerHTML = college();
+      document.getElementById("demo1").innerHTML =
+        "name : " + name +" "+ "age :" + age;
+    </script>
+  </body>
+</html>

@@ -1,40 +1,35 @@
 {
   "student": [
     {
-      "rollno": "100",
-      "name": "jyoti",
-      "city": "Bhopal",
-      "fees": "50000"
-    },
-
-    {
+      "id": "11",
       "rollno": "101",
       "name": "Kapil",
       "city": "Indore",
       "fees": "60000"
     },
-
     {
+      "id": "2",
       "rollno": "102",
       "name": "Ajay",
       "city": "Jabalpur",
       "fees": "80000"
     },
-
     {
+      "id": "3",
       "rollno": "103",
       "name": "Ritu",
       "city": "Ujjain",
       "fees": "10000"
     },
-
     {
+      "id": "4",
       "rollno": "104",
       "name": "Tinu",
       "city": "Delhi",
       "fees": "90000"
     },
     {
+      "id": "5",
       "rollno": "105",
       "name": "Saurabh",
       "city": "Indore",
